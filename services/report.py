@@ -17,7 +17,7 @@ class LaudoService:
 
     def create_laudo(db:Session, laudo_data: LaudoCreate, usuario_id: str):
         db_laudo = Laudo(
-            id=str(uuid.uuid4()),
+        id=str(uuid.uuid4()),
         usuario_id=usuario_id,
         paciente_nome=laudo_data.paciente_nome,
         diagnostico=laudo_data.diagnostico
